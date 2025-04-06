@@ -15,6 +15,7 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         \Illuminate\Foundation\Http\Middleware\TrimStrings::class,
         \Illuminate\Http\Middleware\TrustProxies::class,
+        'admin' => \App\Http\Middleware\AdminMiddleware::class,
     ];
 
     /**
