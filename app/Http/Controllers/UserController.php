@@ -9,11 +9,11 @@ use Illuminate\Validation\Rules;
 
 class UserController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-        $this->middleware('admin')->except(['profile', 'updateProfile']);
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    //     $this->middleware('admin')->except(['profile', 'updateProfile']);
+    // }
 
     public function index(Request $request)
     {

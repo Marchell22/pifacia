@@ -10,7 +10,7 @@ use Ramsey\Uuid\Uuid;
 
 class Task extends Model implements Auditable
 {
-    use HasFactory, SoftDeletes, AuditableTrait;
+    use AuditableTrait, HasFactory, SoftDeletes, AuditableTrait;
 
     protected $fillable = [
         'judul',

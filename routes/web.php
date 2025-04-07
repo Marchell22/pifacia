@@ -22,6 +22,7 @@ Route::middleware('auth')->group(function () {
     
     // Profile
     Route::get('/profile', [UserController::class, 'profile'])->name('profile');
+     Route::get('/profile/edit', [UserController::class, 'edit'])->name('profile.edit');
     Route::put('/profile', [UserController::class, 'updateProfile'])->name('profile.update');
     
     // Role Management (dapat diakses semua user yang sudah login)

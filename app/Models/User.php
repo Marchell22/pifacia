@@ -12,7 +12,7 @@ use OwenIt\Auditing\Auditable as AuditableTrait;
 
 class User extends Authenticatable implements Auditable
 {
-    use HasApiTokens, HasFactory, Notifiable, SoftDeletes, AuditableTrait;
+    use AuditableTrait, HasApiTokens, HasFactory, Notifiable, SoftDeletes, AuditableTrait;
 
     protected $fillable = [
         'name',
